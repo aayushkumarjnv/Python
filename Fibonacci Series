@@ -1,0 +1,20 @@
+# Fibonacci Series of a N numbers
+n_term= int(input("No of terms:"))
+# intialization of two numbers 
+n_1,n_2=0,1
+count=0
+# Check If the no of terms are valid
+if n_term<=0:
+  print("Please enter the positive number")
+elif n_term==1:
+  print("Fibonacci sequence upto",n_term,":")
+  print(n_1)
+# Generate Fibonacci Series of n numbers  
+else:
+  print("Fibonacci sequence :")
+  while count<=n_term:
+    print(n_1)
+    n_th=n_1+n_2
+    n_1=n_2
+    n_2=n_th
+    count +=1
