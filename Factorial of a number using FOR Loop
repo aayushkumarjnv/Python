@@ -1,0 +1,10 @@
+i_num=int(input("Provide a number"))
+if i_num<0:
+  print("Please provide the positive integer")
+elif i_num ==0:
+  print("Factorial of ",i_num, "is",1)
+else:
+  prd=1
+  for i in range(1,i_num+1):
+     prd=prd*i
+  print("Factorial of", i_num,"is",prd)
