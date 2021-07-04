@@ -1,0 +1,23 @@
+# Provide the three number by the user
+a=int(input("Enter the first number"))
+b=int(input("enter the 2nd number"))
+c=int(input("Enter the 3rd number"))
+# Fuction call
+my_min(a,b,c)
+
+# Define function
+def my_min(a,b,c):
+  if a<b:
+    if a<c:
+      m=a
+      print("Minimum of ",a,b,c, "is",m)
+    else:
+      m=c
+      print("Minimum of ",a,b,c,"is",m)
+  else:
+    if b<c:
+      m=b
+      print("Minimum of ",a,b,c, "is ",b)
+    else:
+      m=c
+      print("Minimum of ",a,b,c,"is ",m)
