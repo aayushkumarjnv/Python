@@ -1,0 +1,18 @@
+# factorial of a number using recursive solution.
+# define a fuction using def
+def rec_fact(n):
+  if n==1:
+    return 1
+  else:
+    return n*rec_fact(n-1)
+
+# Input taken from the user
+i_num =int(input("Enter the Number:"))
+
+# condition used to check for -ve, +ve integer & Display result
+if i_num<0:
+  print("Please provide the positive integer")
+elif i_num==0:
+  print("Factorial of",i_num,"is 1")
+else:
+  print("Factorial of ",i_num,"is",rec_fact(i_num))
