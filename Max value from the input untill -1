@@ -1,0 +1,8 @@
+# Read a number untill -1 is seen and give the max of all the number
+n=int(input("Provide A Number"))
+max= n
+while n!=-1:
+  n=int(input("Provide a Number"))
+  if max<n:
+    max=n
+print(max)
