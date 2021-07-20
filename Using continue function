@@ -1,0 +1,8 @@
+# Read 5 input from the user and print the sum of only +ve integer.
+sum=0.0
+for i in range(5):
+  value=int(input("Provide an input"))
+  if value<0:
+    continue
+  sum= sum+value
+print("Sum-",sum)
