@@ -1,0 +1,7 @@
+# Find the sum of reciprocal of n natural number.
+n=int(input("Enter the  poitive number"))
+rsum=0.0 # Initilazite the the sum
+for x in range(1,n+1):
+  rsum = rsum+1/x
+# Display Result
+print("The sum of reciprocal of",n,"natural number is",rsum)
